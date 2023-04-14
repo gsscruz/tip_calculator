@@ -1,0 +1,74 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*  */
+
+:root {
+  --primary-strong-cyan: hsl(172, 67%, 45%);
+  --netural-very-dark-cyan: hsl(183, 100%, 15%);
+  --neutral-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --neutral-grayish-cyan: hsl(184, 14%, 56%);
+  --neutral-light-grayish-cyan: hsl(185, 41%, 84%);
+  --neutral-very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* form input 24px */
+/* font-family: 'Space Mono', monospace; */
+/* weigths:700 */
+body {
+  background: var(--neutral-light-grayish-cyan);
+}
+main {
+  width: 23.4375rem;
+  height: 49.3125rem;
+  background-color: white;
+  margin-top: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.calculator_input {
+  background: pink;
+  height: 27.25rem;
+  width: 19.4375rem;
+  margin: 0 auto;
+}
+.calculator_result {
+  height: 16.0625rem;
+  width: 20.4375rem;
+  background: green;
+  margin: 0 auto;
+}
+
+.bill {
+  height: 4.875rem;
+  background-color: red;
+}
+.tip {
+  height: 13.5rem;
+  background-color: red;
+  margin-top: 2rem;
+}
+.number_people {
+  height: 4.875rem;
+  background-color: red;
+  margin-top: 2rem;
+}

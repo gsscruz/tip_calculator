@@ -14,46 +14,89 @@
 </head>
 
 <body>
-
-  <!-- amarelo -->
+  <div class="titleContainer">
+    <img src="./images/logo.svg" alt="">
+  </div>
   <main>
+
     <section class="calculator_input">
-      <div class="bill"></div>
-      <div class="tip"></div>
-      <div class="number_people"></div>
+      <div class="billContainer">
+        <div class="bill">Bill</div>
+        <div class="billInputContainer">
+          <img src="./images/icon-dollar.svg" alt="">
+          <div id="billInputValue">142.55</div>
+        </div>
+      </div>
+      <div class="tip">
+        <p class="select_tip">Select Tip %</p>
+        <div class="tileContainer">
+          <div class="tile">5%</div>
+          <div class="tile">10%</div>
+          <div class="tile">15%</div>
+          <div class="tile">25%</div>
+          <div class="tile">50%</div>
+          <div class="tile">Custom</div>
+        </div>
+      </div>
+      <div class="numberPeopleContainer">
+        <div class="numberPeople">
+          Number of People
+        </div>
+        <div class="numberPeopleInputContainer">
+          <img src="./images/icon-person.svg" alt="" srcset="">
+          <div id="numberInputValue">5</div>
+        </div>
+      </div>
     </section>
     <section class="calculator_result">
       <div class="calculator_display">
-        <div class="tip_amount"></div>
-        <div class="total_person"></div>
+
+        <div class="tipAmountContainer">
+
+          <div class="tipAmountLabel">
+            <div class="tipAmount">
+              Tip Amount
+            </div>
+            <div class="tipPerPerson">
+              / person
+            </div>
+          </div>
+
+          <div class="tipAmountDisplay">
+            $4.27
+          </div>
+
+        </div>
+
+        <div class="totalPersonContainer">
+
+          <div class="totalAmountLabel">
+            <div class="totalAmount">Total</div>
+            <div class="totalPerPerson">/ person</div>
+          </div>
+
+          <div class="totalAmountDisplay">$32.79</div>
+
+
+        </div>
       </div>
-      <div class="btn_reset"></div>
+      <div class="btn_reset tile">
+        Reset
+      </div>
     </section>
   </main>
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
 
-  Number of People
 
-  Tip Amount
-  / person
 
-  Total
-  / person
 
-  Reset
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+
+
+
+
+
 </body>
 
 </html>

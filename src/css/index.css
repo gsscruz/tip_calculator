@@ -33,20 +33,31 @@ img {
 /* weigths:700 */
 body {
   background: var(--neutral-light-grayish-cyan);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
 }
+
+.titleContainer {
+  padding-top: 3.125rem;
+  margin-bottom: 2.55rem;
+  display: flex;
+
+  justify-content: center;
+}
+
 main {
   width: 23.4375rem;
   height: 49.3125rem;
   background-color: white;
-  margin-top: 9rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 .calculator_input {
-  background: pink;
   height: 27.25rem;
   width: 19.4375rem;
   margin: 0 auto;
@@ -54,21 +65,135 @@ main {
 .calculator_result {
   height: 16.0625rem;
   width: 20.4375rem;
-  background: green;
+  background: var(--netural-very-dark-cyan);
   margin: 0 auto;
+  border-radius: 15px;
+
+  /*    teste   */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.bill {
+.billContainer {
   height: 4.875rem;
-  background-color: red;
+  color: var(--neutral-dark-grayish-cyan);
+}
+
+.billInputContainer {
+  margin-top: 0.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--netural-very-dark-cyan);
+  background-color: hsl(185, 38%, 97%);
+  height: 3rem;
+  border-radius: 5px;
+  padding-right: 1.062rem;
+  padding-left: 1.062rem;
+}
+
+.tileContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.035rem;
 }
 .tip {
   height: 13.5rem;
-  background-color: red;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
-.number_people {
-  height: 4.875rem;
-  background-color: red;
-  margin-top: 2rem;
+.select_tip {
+  color: var(--neutral-dark-grayish-cyan);
+  margin-bottom: 1rem;
+}
+
+.tile {
+  background-color: var(--netural-very-dark-cyan);
+  width: 9.164rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+.tileContainer div:last-of-type {
+  background-color: hsl(185, 38%, 97%);
+  color: hsl(180, 18%, 40%);
+}
+
+.numberPeople {
+  color: var(--neutral-dark-grayish-cyan);
+}
+.numberPeopleInputContainer {
+  margin-top: 0.375rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--netural-very-dark-cyan);
+  background-color: hsl(185, 38%, 97%);
+  height: 3rem;
+  border-radius: 5px;
+  align-items: center;
+  padding-right: 1.062rem;
+  padding-left: 1.062rem;
+}
+
+.tile:hover,
+.btn_reset:hover {
+  background: hsl(172, 61%, 77%) !important;
+  cursor: pointer;
+}
+
+.calculator_display {
+  width: 17.5625rem;
+  height: 7.25rem;
+  margin-bottom: 2rem;
+  margin-top: 2.3125rem;
+}
+
+.totalPersonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tipAmountContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.tipAmount {
+  color: var(--white);
+}
+.tipPerPerson {
+  color: hsl(183, 15%, 56%);
+}
+.tipAmountDisplay {
+  align-self: flex-end;
+  font-size: 32px;
+  color: var(--primary-strong-cyan);
+}
+
+.totalAmount {
+  color: var(--white);
+}
+.totalPerPerson {
+  color: hsl(183, 15%, 56%);
+}
+.totalAmountDisplay {
+  align-self: flex-end;
+  font-size: 32px;
+  color: var(--primary-strong-cyan);
+}
+
+.calculator_result .btn_reset {
+  text-transform: uppercase;
+  width: 17.5625rem;
+  margin-bottom: 1.5rem;
+  color: var(--netural-very-dark-cyan);
+  background-color: var(--primary-strong-cyan);
 }

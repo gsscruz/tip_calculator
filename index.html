@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
-  <script src="dist/js/main.js defer"></script>
+  <script src="dist/js/main.js" defer></script>
   <link rel="stylesheet" href="./src/css/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -17,6 +17,7 @@
   <div class="titleContainer">
     <img src="./images/logo.svg" alt="">
   </div>
+
   <main>
 
     <section class="calculator_input">
@@ -24,29 +25,32 @@
         <div class="bill">Bill</div>
         <div class="billInputContainer">
           <img src="./images/icon-dollar.svg" alt="">
-          <div id="billInputValue">142.55</div>
+          <input id="billInputValue" type="text">
         </div>
       </div>
       <div class="tip">
         <p class="select_tip">Select Tip %</p>
         <div class="tileContainer">
-          <div class="tile">5%</div>
-          <div class="tile">10%</div>
-          <div class="tile">15%</div>
-          <div class="tile">25%</div>
-          <div class="tile">50%</div>
-          <div class="tile">Custom</div>
+          <div class="tile percent" value="5">5%</div>
+          <div class="tile percent" value="10">10%</div>
+          <div class="tile percent" value="15">15%</div>
+          <div class="tile percent" value="25">25%</div>
+          <div class="tile percent" value="50">50%</div>
+          <!-- <div class="tile percent">Custom</div> -->
+          <input class="tile percent" placeholder="Custom">
+
         </div>
       </div>
       <div class="numberPeopleContainer">
+
         <div class="numberPeople">
           Number of People
+          <div class="numberPeopleInputContainer">
+            <img src="./images/icon-person.svg" alt="" srcset="">
+
+            <input id="numberOfPeopleInputValue" type="text">
+          </div>
         </div>
-        <div class="numberPeopleInputContainer">
-          <img src="./images/icon-person.svg" alt="" srcset="">
-          <div id="numberInputValue">5</div>
-        </div>
-      </div>
     </section>
     <section class="calculator_result">
       <div class="calculator_display">
@@ -63,7 +67,7 @@
           </div>
 
           <div class="tipAmountDisplay">
-            $4.27
+
           </div>
 
         </div>
@@ -75,7 +79,7 @@
             <div class="totalPerPerson">/ person</div>
           </div>
 
-          <div class="totalAmountDisplay">$32.79</div>
+          <div class="totalAmountDisplay"></div>
 
 
         </div>
